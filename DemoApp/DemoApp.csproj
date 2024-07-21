@@ -1,14 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <ItemGroup>
-    <ProjectReference Include="..\DemoLib\DemoLib.csproj" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\DemoLib\DemoLib.csproj" />
+	</ItemGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<DocumentationFile>/home/tomnukem/projects/CliDemo/DemoApp/bin/Debug/net6.0/linux-x64/DemoApp.xml</DocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="EWSoftware.SandcastleBuilder.Utils" Version="2024.2.18" />
+		<PackageReference Include="EWSoftware.SHFB" Version="2024.2.18" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.1" />
+    	<PackageReference Include="Serilog.Extensions.Hosting" Version="4.2.0" />
+    	<PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+    	<PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+    	<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+	</ItemGroup>
 </Project>
