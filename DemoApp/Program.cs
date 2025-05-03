@@ -38,7 +38,11 @@ class Program
         await host.RunConsoleAsync(cancellationToken);
         return Environment.ExitCode;
     }
-
+    
+    /// <summary>
+    /// Creating and configure the Host Builder
+    /// </summary>
+    /// <returns>The configured Host Builder</returns>
     private IHostBuilder CreateHostBuilder()
     {
         return Host.CreateDefaultBuilder()
