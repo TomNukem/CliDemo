@@ -3,5 +3,19 @@
     // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
     // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {            
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/DemoApp/bin/Debug/net8.0/DemoApp.dll",
+            "args": ["-o", "3"],
+            "cwd": "${workspaceFolder}/DemoApp",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+        
+    ]
+
 }

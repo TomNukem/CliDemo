@@ -49,6 +49,7 @@ class Program
             .ConfigureLogging(logging =>
             {
                 logging.ClearProviders();
+                logging.AddConsole();
             })
             .UseSerilog((hostContext, loggerConfiguration) =>
             {
