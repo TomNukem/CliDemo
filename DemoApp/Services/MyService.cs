@@ -1,7 +1,7 @@
 public class MyService : IMyService
 {
-    public async Task PerformLongTaskAsync()
+    public async Task PerformLongTaskAsync(CancellationToken cancellationToken)
     {
-        await Task.Delay(5000);
+        await Task.Delay(50000, cancellationToken);
     }
 }

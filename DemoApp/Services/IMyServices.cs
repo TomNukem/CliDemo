@@ -1,5 +1,5 @@
 
 public interface IMyService
 {
-    Task PerformLongTaskAsync();
+    Task PerformLongTaskAsync(CancellationToken cancellationToken);
 }

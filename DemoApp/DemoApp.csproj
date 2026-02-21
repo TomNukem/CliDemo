@@ -6,22 +6,15 @@
 	    <Version>1.0.0</Version>
     	<InformationalVersion>1.0.0</InformationalVersion>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
-	<PropertyGroup>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<NoWarn>$(NoWarn);1591</NoWarn>
-		<DocumentationFile>/home/tomnukem/projects/CliDemo/DemoApp/bin/Debug/net8.0/linux-x64/DemoApp.xml</DocumentationFile>
-	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="EWSoftware.SandcastleBuilder.Utils" Version="2025.3.22" />
-		<PackageReference Include="EWSoftware.SHFB" Version="2025.3.22" />
-		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
 		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />
-    	<PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
-    	<PackageReference Include="Serilog.Settings.Configuration" Version="9.0.0" />
+    	<PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0" />
+    	<PackageReference Include="Serilog.Settings.Configuration" Version="10.0.0" />
     	<PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
     	<PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
 	</ItemGroup>

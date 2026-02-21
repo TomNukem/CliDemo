@@ -43,7 +43,7 @@ public class Worker : IHostedService
 
         try
         {
-            await _myService.PerformLongTaskAsync();
+            await _myService.PerformLongTaskAsync(cancellationToken);
 
             _exitCode = 0;
         }
